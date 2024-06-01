@@ -1,0 +1,129 @@
+/*================================================== General  🢐🢑🢓🢒◀▲▼▶◂▴▾▸➕➖ */
+html{
+	--fond  :#293540;
+	--carte :#374552;
+	--accent:#475766;
+	--texte :#93a2b3;
+	--hover :#79a1f2;
+	--color :#86a3bf;
+}
+body{
+	width:800px;
+	margin:20px auto 20px auto;
+	background:var(--fond);
+	font-family:roboto;
+}
+/*================================================== Header */
+header{
+	height:160px;
+	background:var(--carte);
+	box-shadow:0 2px 6px rgba(0,0,0,0.2);
+	margin-bottom:20px;
+	float:left;
+}
+img.logo{
+	height:160px;
+}
+div.banner{
+	height:160px;
+	width:460px;
+	background-image:linear-gradient(to right,var(--carte),rgba(0,0,0,0)),url("images/background.png");
+	background-size:100%;
+	float:right;
+}
+	
+/*================================================== Nav */
+nav{
+	width:160px;
+	float:left;
+	background:var(--carte);
+	box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+nav a{
+	font-family:roboto;
+	color:var(--texte);
+	display:block;
+	text-align:left;
+	text-decoration:none;
+	padding-left:12px;
+	font-weight:bold;
+}
+nav button{
+	height:40px;
+	line-height:40px;
+	background:none;
+	border:none;
+	color:var(--texte);
+	font-size:14px;
+}
+nav button:hover{
+	background:var(--accent);
+}
+.catlink{
+	width:75%;
+	padding:0;
+}
+.plus{
+	cursor:zoom-in;
+	width:25%;
+	height:40px;
+	display:block;
+	float:right;
+}
+.plus:after{
+	content:"▼";
+}
+.active{
+	cursor:zoom-out;
+}
+.active:after{
+	content:"▲";
+}
+.content{
+	max-height:0;
+	display:block;
+	overflow:hidden;
+	transition:max-height 0.125s ease-out;
+}
+.content a{
+	padding-left:24px;
+}
+.link{
+	width:100%;
+	border:none;
+	padding:0;
+}
+/*================================================== Section */
+section{
+	width:620px;
+	background:var(--carte);
+	box-shadow:0 2px 6px rgba(0,0,0,0.2);
+	float:right;
+}
+
+/*================================================== Text */
+h1{
+	font-size:20px;
+	color:var(--texte);
+	margin:0 10px 0 10px;
+	padding-top:10px;
+	padding-left:5px;
+	padding-bottom:5px;
+	padding-right:15px;
+	border-bottom:solid 2px var(--texte);
+}
+h2{
+	color:var(--accent);
+	font-size:16px;
+	margin:10px 15px 0 15px;
+	border-bottom:solid 1px var(--accent);
+}
+
+p{
+	color:var(--texte);
+	margin:15px;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:14px;
+	line-height:18px;
+}

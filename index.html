@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Esthéon -︎ Encyclopédie</title>
+	<meta name="author" content="Limo"/> <meta charset="utf-8"/>
+	<link rel="icon" href="images/icon_esthéon.png"/> <link rel="stylesheet" href="style_index.css"/>
+</head>
+
+<body>
+	<header>
+		<a href="#"><img src="images/logo_esthéon.png" class="logo"></a>
+		<div class="banner" title="River Mountain II Panoramic by Ferdinand Ladera"></div>
+	</header>
+	
+	<nav>
+		<button class="link"><a href="#2">Accueil</a></button>
+		<div><button class="catlink"><a href="#1">Monde</a></button><button class="plus"></button>
+			<div class="content">
+				<button class="link"><a href="#2">Carte</a></button>
+				<button class="link"><a href="#3">Pays</a></button>
+				<button class="link"><a href="#4">Politique</a></button>
+			</div>
+		<button class="link"><a href="#2">Règles du jeu</a></button>
+		</div>
+	</nav>
+	
+	
+	<section>
+		<h1>Titre</h1>
+		<p>
+			Texte
+		</p>
+	</section>
+</body>
+
+<script>
+var coll = document.getElementsByClassName("plus");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</html>
